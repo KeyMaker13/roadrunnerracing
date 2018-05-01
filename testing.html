@@ -1,0 +1,106 @@
+<html>
+<head>
+
+   
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script src="http://cdn.embed.ly/jquery.embedly-3.1.1.min.js" type="text/javascript"></script>
+  
+    
+<script src="http://cdn.embed.ly/jquery.preview-0.3.2.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="http://cdn.embed.ly/jquery.preview-0.3.2.css" />
+<script type="text/javascript" src='js/handlebars.js'>  </script>
+
+<style>
+    
+    .modimg {
+         
+        width:300px !important;
+        height:300px !important;
+    }
+    
+    
+    
+</style>
+    
+    
+    
+    
+    <!-- Preview -->
+ <!--
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+  <script src="http://cdn.embed.ly/jquery.embedly-3.0.5.min.js" type="text/javascript"></script>
+  <script src="http://cdn.embed.ly/jquery.preview-0.3.2.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="http://cdn.embed.ly/jquery.preview-0.3.2.css" />
+    
+    -->
+    
+</head>
+
+<body>
+    
+    
+    
+    
+    <h1>Test page</h1>
+    
+    <a href="http://www.monstertool.com" id='url'></a>
+    <br><br>
+    <a href="http://www.itm-texas.com" id='url2'></a>
+    <a href="http://www.facebook.com" id = 'url3'></a>
+    
+
+    
+    <div>
+        Splitting array in 3 parts<br>
+        
+        
+    
+    </div>
+
+    
+    
+    
+</body>
+    
+    
+    <script type="text/javascript">
+        
+        $.embedly.defaults.key = '4caef9e5d6eb45a981f818dfc8f88e72';
+      
+        $('#url').embedly().each(function(){
+              alert('here');
+            
+        });
+        $('#url2').embedly();
+        $('#url3').embedly();
+         
+        
+        $("img").each(function(){
+            alert('here');
+            
+            $("img").attr("class","modimg");
+            $('img').after("<br>");
+            
+            
+        });
+        
+        
+            
+            /*
+        
+              */                         
+        
+    // Set up preview.
+    //$('#url').preview({key:'4caef9e5d6eb45a981f818dfc8f88e72'});
+ 
+    // On submit add hidden inputs to the form.
+    //$('form').on('submit', function(){
+    //  $(this).addInputs($('#url').data('preview'));
+    //  return true;
+    //});
+        
+    </script>
+    
+    
+
+</html>
